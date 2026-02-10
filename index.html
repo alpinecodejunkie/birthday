@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Eh! 🍁</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="intro-screen" id="introScreen">
+            <!-- Maple Leaf Background -->
+            <svg class="maple-leaf-bg" xmlns="http://www.w3.org/2000/svg" viewBox="-2015 -2000 4030 4030">
+                <path fill="#ff0000" d="m-90 2030 45-863a95 95 0 0 0-111-98l-859 151 116-320a65 65 0 0 0-20-73l-941-762 212-99a65 65 0 0 0 34-79l-186-572 542 115a65 65 0 0 0 73-38l105-247 423 454a65 65 0 0 0 111-57l-204-1052 327 189a65 65 0 0 0 91-27l332-652 332 652a65 65 0 0 0 91 27l327-189-204 1052a65 65 0 0 0 111 57l423-454 105 247a65 65 0 0 0 73 38l542-115-186 572a65 65 0 0 0 34 79l212 99-941 762a65 65 0 0 0-20 73l116 320-859-151a95 95 0 0 0-111 98l45 863z"/>
+            </svg>
+            
+            <!-- Content on top of leaf -->
+            <div class="intro-content">
+                <h2>🍁 Wait a minute, eh... 🍁</h2>
+                <button id="revealBtn">It's your birthday! 🎉</button>
+            </div>
+        </div>
+        
+        <div class="celebration hidden" id="celebration">
+            <div class="celebration-layout">
+                <!-- LEFT SIDE: Game -->
+                <div class="game-section">
+                    <div class="game-container" id="gameContainer">
+                        <h3 class="game-title">🍁 Birthday Racer 🍁</h3>
+                        <div class="game-header">
+                            <div class="score">Score: <span id="score">0</span></div>
+                            <div class="lives">Lives: <span id="lives">❤️❤️❤️</span></div>
+                        </div>
+                        <canvas id="gameCanvas"></canvas>
+                        <div class="game-controls">
+                            <p class="game-instructions">Use ← → or A D to move</p>
+                            <button class="game-btn" id="startGameBtn">🏁 Start Game!</button>
+                        </div>
+                        <!-- Mobile Controls -->
+                        <div class="mobile-controls">
+                            <button class="control-btn" id="leftBtn">◀️</button>
+                            <button class="control-btn" id="rightBtn">▶️</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- RIGHT SIDE: Birthday Message -->
+                <div class="message-section">
+                    <div class="canada-banner">
+                        <span>🍁</span>
+                        <span>🇨🇦</span>
+                        <span>🍁</span>
+                    </div>
+                    <h1 class="birthday-title">Happy Birthday, <span id="friendName">Friend</span>! 🍁</h1>
+                    <div class="cake">🎂</div>
+                    <p class="message" id="personalMessage">
+                        Loading your message...
+                    </p>
+                    <div class="canada-footer">
+                        <p>🦫 Wishing you a beaver-y good birthday! 🦫</p>
+                        <p class="canada-love">Made with love 🇨🇦</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <canvas id="confettiCanvas"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
