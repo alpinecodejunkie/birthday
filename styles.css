@@ -48,8 +48,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 750px;
-    height: 750px;
+    width: 700px;
+    height: 700px;
     z-index: 0;
     animation: leafPulse 3s ease-in-out infinite;
 }
